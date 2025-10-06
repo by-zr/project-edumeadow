@@ -1,0 +1,26 @@
+<!-- 180295818 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EduMeadow WebSocket Connection Test</title>
+    </head>
+    <body>
+        <script>
+            var socket = new WebSocket('ws://localhost:8000/edumeadow/chat');
+            socket.onopen = function() {
+                console.log("Yay it's connected!");
+                var message = {
+                    'message': 'Hello, EduMeadow WebSocket!',
+                    'student_id': '1' 
+                };
+                socket.send(JSON.stringify(message));
+            };
+
+            socket.onmessage = function(e) {
+                var data = JSON.parse(e.data);
+                console.log('Received:', data.message);
+            };
+        </script>
+    </body>
+</html>

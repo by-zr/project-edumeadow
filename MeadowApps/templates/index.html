@@ -1,0 +1,102 @@
+<!-- 180295818 -->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDUMEADOW</title>
+
+    <!-- ICONSCOUT CDN-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <!-- JAVASCRIPT
+      <script src="./main.js"></script> 
+    -->
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="container nav-container">
+        <a href="/"><h4>EDUMEADOW</h4></a>
+        <ul class="nav-menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'courses' %}">Courses</a></li>
+          <li><a href="{% url 'home_reviews' %}">Reviews</a></li>
+        </ul>
+
+        <button id="open-menu-button"><i class="uil uil-bars"></i></button>
+        <button id="close-menu-button"><i class="uil uil-multiply"></i></button>
+      </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+
+    <!-- HEADER -->
+    <header>
+      <div class="container header-container">
+        <div class="header-left">
+          <h1>Where Knowledge Meets Innovation</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            reprehenderit quia iusto reiciendis laudantium fugit cumque aliquid
+            eaque! Maiores, natus aliquam cupiditate asperiores hic quidem
+            dignissimos atque! Iste, reiciendis facere!
+          </p>
+          <a href="edumeadow/register/" class="btn btn-primary">Get Started</a>
+        </div>
+
+        <div class="header-right">
+          <div class="header-right-image">
+            <img src="/media/chick_by_casilyn.png" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer-container">
+        <div class="footer-description">
+          <a href="/" class="footer-logo"><h4>EDUMEADOW</h4></a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eveniet doloribus error magni perspiciatis. </p>
+        </div>
+
+        <div class="footer-description">
+          <h4>Terms Of Use</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eveniet doloribus error magni perspiciatis. </p>
+        </div>
+
+        <div class="footer-description">
+          <h4>Privacy Policy</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eveniet doloribus error magni perspiciatis. </p>
+        </div>
+
+        <div class="footer-4">
+          <h4>Contact Us</h4>
+          <div class ="footer-details">
+            <p>Soong Zi Rui Casilyn</p>
+            <p>zrsoong001@mymail.sim.edu.sg</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END OF FOOTER -->
+    
+  </body>
+</html>
