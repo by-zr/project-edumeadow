@@ -1,4 +1,7 @@
 {
+  "name": "edumeadow",
+  "version": "1.0.0",
+  "description": "A modern online learning platform built with Django",
   "dependencies": {
     "bootstrap": "^5.3.3"
   }

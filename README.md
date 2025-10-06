@@ -80,7 +80,7 @@ The project follows Django's app-based architecture with three main applications
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd awd_cw2
+   cd EduMeadow
    ```
 
 2. **Set up Python environment**
@@ -118,15 +118,10 @@ The project follows Django's app-based architecture with three main applications
    python manage.py runserver
    ```
 
-8. **Access the application**
-   - Main site: http://127.0.0.1:8000/
-   - Admin panel: http://127.0.0.1:8000/admin/
-   - API documentation: http://127.0.0.1:8000/auth/
-
 ## 📁 Project Structure
 
 ```
-awd_cw2/
+EduMeadow/
 ├── EduMeadow/                 # Main Django project
 │   ├── settings.py           # Project settings
 │   ├── urls.py              # Main URL configuration
@@ -268,7 +263,7 @@ The project can be containerized using Docker with separate containers for:
 
 ## 🎓 Learning Project
 
-This EduMeadow platform is developed as a **learning project** for educational purposes, specifically as part of the University of London AWD (Advanced Web Development) coursework. The project serves as a comprehensive demonstration of modern web development practices and technologies.
+This EduMeadow platform is developed as a **learning project** for educational purposes. The project serves as a comprehensive demonstration of modern web development practices and technologies.
 
 ### Learning Objectives Achieved
 - **Django Framework**: Full-stack web application development
@@ -315,4 +310,4 @@ While this is primarily a learning project, the EduMeadow platform has potential
 
 ---
 
-**Note**: This is an educational project developed for coursework purposes. The application demonstrates modern web development practices using Django, REST APIs, and real-time communication features. While designed for learning, it showcases the potential for building comprehensive educational technology platforms.
+**Note**: This is an educational project that demonstrates modern web development practices using Django, REST APIs, and real-time communication features. While designed for learning, it showcases the potential for building comprehensive educational technology platforms.
